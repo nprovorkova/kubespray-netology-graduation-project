@@ -15,7 +15,8 @@ ansible-playbook -i ../kubespray-netology-graduation-project/netology-cluster/in
 <br>sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 <br>sudo chown $(id -u):$(id -g) $HOME/.kube/config
 <br>kubectl get pods --all-namespaces -o wide
-<br>scp file ubuntu@"{{ tf_master_ip }}":~/.kube/config ~/.kube/
+<br>exit
+<br>scp ubuntu@"{{ tf_master_ip }}":~/.kube/config ~/.kube/
 <br>Заменяем в конфиге адрес сервера на tf_master_ip
 <br>С локального компа проверяем kubectl get pods --all-namespaces -o wide
 
