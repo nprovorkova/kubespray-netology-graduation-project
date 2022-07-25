@@ -43,6 +43,7 @@ containerd_registries:
   "docker.io":
     - "https://hub.docker.com"
     - "https://k8s.gcr.io"
+    - "https://cr.yandex"
 
 # containerd_max_container_log_line_size: -1
 
